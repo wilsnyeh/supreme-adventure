@@ -6,7 +6,6 @@ const Pet = (props) => {
         React.createElement('h1', {}, props.name),
         React.createElement('h2', {}, props.animal),
         React.createElement('h2', {}, props.breed),
-        React.createElement('h2', {}, props.age),
     ])
 }
 
@@ -20,7 +19,6 @@ const App = () => {
                 name: 'Combo',
                 animal: 'Dog',
                 breed: 'Yorkie-mix',
-                age:'3'
             }),
             React.createElement(Pet),
             React.createElement(Pet),
