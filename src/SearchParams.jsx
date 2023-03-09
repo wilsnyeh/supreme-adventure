@@ -1,9 +1,11 @@
 import { useState } from 'react';
 const Animals = ["bird", "cat", "dog", "rabbit", "reptile"]
+const Breeds = []
 
 const SearchParams = () => {
     const [location, setLocation] = useState ('')
     const [animal, setAnimal] = useState('');
+    const [breed, setBreed] = useState('')
     return (
         <div className ="search-params">
             <form>
@@ -22,11 +24,28 @@ const SearchParams = () => {
                     value={animal}
                     onChange={(e) => {
                         setAnimal(e.target.value)
+                        setBreed('')
                     }}
                     >
                     <option/>
                     {Animals.map((animal) => (
                         <option key={animal}>{animal}</option>
+                    ))}
+                    </select>
+                </label>
+                <label htmlFor="breed">
+                    Breed
+                    <select
+                    id = "breed"
+                    disabled = {Breeds.length ===0}
+                    value={breed}
+                    onChange={(e) => {
+                        setBreed(e.target.value)
+                    }}
+                    >
+                    <option/>
+                    {Breeds.map((breed) => (
+                        <option key={breed}>{breed}</option>
                     ))}
                     </select>
                 </label>
