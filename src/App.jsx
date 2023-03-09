@@ -1,5 +1,5 @@
-import { createRoot }  from "react-dom";
-import Pet from "./Pet";
+import { createRoot }  from "react-dom/client";
+import SearchParams from "./SearchParams";
 
 // const App = () => {
 //     return React.createElement(
@@ -11,7 +11,7 @@ import Pet from "./Pet";
 //                 name: 'Combo',
 //                 animal: 'Dog',
 //                 breed: 'Yorkie-mix',
-//             }),
+//             }), 
 //             React.createElement(Pet),
 //             React.createElement(Pet),
 //         ]
@@ -19,11 +19,14 @@ import Pet from "./Pet";
 // };
 
 const App = () => {
+    return (
     <div>
         <h1>Adopt Me!</h1>
-        <Pet name = 'Combo' animal = 'dog' breed = 'yorkie-mix' />
-        <Pet name = 'Sooter' animal = 'dog' breed = 'jack russell terrier' />
+        <SearchParams/>
+        {/* <Pet name = 'Combo' animal = 'dog' breed = 'yorkie-mix' />
+        <Pet name = 'Sooter' animal = 'dog' breed = 'jack russell terrier' /> */}
     </div>
+    );
 }
 
 const container = document.getElementById('root');
