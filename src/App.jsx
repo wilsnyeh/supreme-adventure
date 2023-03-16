@@ -1,4 +1,5 @@
-import { createRoot }  from "react-dom/client";
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
 import SearchParams from "./SearchParams";
 
 // const App = () => {
@@ -11,7 +12,7 @@ import SearchParams from "./SearchParams";
 //                 name: 'Combo',
 //                 animal: 'Dog',
 //                 breed: 'Yorkie-mix',
-//             }), 
+//             }),
 //             React.createElement(Pet),
 //             React.createElement(Pet),
 //         ]
@@ -19,16 +20,16 @@ import SearchParams from "./SearchParams";
 // };
 
 const App = () => {
-    return (
+  return (
     <div>
-        <h1>Adopt Me!</h1>
-        <SearchParams/>
-        {/* <Pet name = 'Combo' animal = 'dog' breed = 'yorkie-mix' />
+      <h1>Adopt Me!</h1>
+      <SearchParams />
+      {/* <Pet name = 'Combo' animal = 'dog' breed = 'yorkie-mix' />
         <Pet name = 'Sooter' animal = 'dog' breed = 'jack russell terrier' /> */}
     </div>
-    );
-}
+  );
+};
 
-const container = document.getElementById('root');
+const container = document.getElementById("root");
 const root = createRoot(container);
-root.render(<App/>);
+root.render(<App />);
