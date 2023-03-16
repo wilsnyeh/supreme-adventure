@@ -24,7 +24,9 @@ import Details from "./Details";
 const App = () => {
   return (
     <BrowserRouter>
-      <h1>Adopt Me!</h1>
+      <header>
+        <Link to="/"> Adopt Me!</Link>
+      </header>
       <Routes>
         <Route path="/details/:id" element={<Details />} />
         <Route path="/" element={<SearchParams />} />
