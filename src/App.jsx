@@ -2,11 +2,8 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import SearchParams from "./SearchParams";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import {
-  QueryClient,
-  QueryClient,
-  QueryClientProvider,
-} from "@tanstack/react-query";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { Link } from "react-router-dom";
 import Details from "./Details";
 
 // const App = () => {
@@ -30,7 +27,7 @@ import Details from "./Details";
 // how long do we want to keep things cached?
 // infinty = is fine so long as user is within session
 // can also change 'infinity' into actual time, ie. 60 seconds
-const QueryClient = new QueryClient({
+const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
       staleTime: Infinity,
