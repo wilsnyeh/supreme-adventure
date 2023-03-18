@@ -65,7 +65,7 @@ const SearchParams = () => {
             value={animal}
             onChange={(e) => {
               setAnimal(e.target.value);
-              setBreed("");
+              //   setBreed("");
             }}
           >
             <option />
