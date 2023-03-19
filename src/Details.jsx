@@ -19,6 +19,7 @@ const Details = () => {
 
   return (
     <div className="details">
+      {/* if image prop is unfound, default from carousel will populate */}
       <Carousel images={pet.images} />
       <div>
         <h1>{pet.name}</h1>

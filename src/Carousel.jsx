@@ -4,6 +4,7 @@ class Carousel extends Component {
   state = {
     active: 0,
   };
+  // this is to allow a sort of static placeholder, in the event that no images are available
   static defaultProps = {
     images: ["http://pets-images.dev-apis.com/pets/none.jpg"],
   };
