@@ -38,7 +38,7 @@ const queryClient = new QueryClient({
 });
 
 const App = () => {
-  const AdoptedPetContext = useState(null);
+  const adoptedPet = useState(null);
   return (
     <BrowserRouter>
       <QueryClientProvider client={queryClient}>
