@@ -4,8 +4,8 @@
 }
 
 body {
-    background-color: #ffffff;
-    background-image: url("src\images\shiba.jpg");
+    background-color: #ffc8c8;
+    background-image: url(/images/paws.png);
     margin: 0;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
