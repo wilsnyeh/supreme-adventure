@@ -38,8 +38,9 @@ const Details = () => {
             <Modal>
               <div>
                 <h1>Would you like to adopt {pet.name}?</h1>
-                <div className="buttons">
+                <div className="button">
                   <button
+                    className="rounded border-none bg-orange-500 px-6 py-2 text-white hover:opacity-50"
                     onClick={() => {
                       setAdoptedPet(pet);
                       navigate("/");
