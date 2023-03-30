@@ -32,7 +32,12 @@ const Details = () => {
         <h1>{pet.name}</h1>
         <h2>
           {pet.animal} - {pet.breed} - {pet.city}, {pet.state}
-          <button onClick={() => setShowModal(true)}>Adopt {pet.name}</button>
+          <button
+            className="rounded border-none bg-orange-500 px-6 py-2 text-white hover:opacity-50"
+            onClick={() => setShowModal(true)}
+          >
+            Adopt {pet.name}
+          </button>
           <p>{pet.description}</p>
           {showModal ? (
             <Modal>

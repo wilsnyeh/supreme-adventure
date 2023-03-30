@@ -4,7 +4,7 @@ import AdoptedPetContext from "./AdoptedPetContext";
 import useBreedList from "./useBreedList";
 import Results from "./Results";
 import fetchSearch from "./fetchSearch";
-const Animals = ["bird", "cat", "dog", "rabbit", "reptile"];
+const Animals = ["Bird", "Cat", "Dog", "Rabbit", "Reptile"];
 // const Breeds = []
 
 const SearchParams = () => {
